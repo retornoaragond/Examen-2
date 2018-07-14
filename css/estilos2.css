@@ -7,9 +7,6 @@ body{
   font-size: 1em;
   background-color: black;
 }
-img{
-  box-shadow: 2px 2px  #02010a;
-}
 .cabecera{
   color: white;
   background-color: #5b7989;
@@ -42,45 +39,28 @@ img{
 .actual {
   text-decoration: none;
 }
-.img_principal{
-  background-color: #82c3a6;
-  padding: 5% 10%;
-  display: center
-}
-.img_principal img{
-  width: 100%;
-}
-.img_secundarias{
+.galeria{
   background-color: #d5c75f;
   align-items: center;
-  text-align:center;
 }
-.img_secundarias div{
-  padding: 3% 5%;
+.galeria div{
+  padding: 5% 10%;
 }
-.img_secundarias img{
-  border: solid 1px #02010a;
-  width: 90%;
+.galeria img{
+  box-shadow: 2px 2px #02010a;
+  width: 100%;
 }
-.img_secundarias a{
-  color: black;
-  font-size: 1.5em;
+.f1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
-.c1 img{
-  -webkit-transition: rotate, 1s;
+.f2, .f4, .f6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
-.c1 img:hover{
-  box-shadow: 2px 2px #82c3a6;
-  border: solid 1px #82c3a6;
-  transform: rotate(10deg);
-}
-.c2 img{
-  -webkit-transition: traslate, 1s;
-}
-.c2 img:hover{
-  box-shadow: 2px 2px #82c3a6;
-  border: solid 1px #82c3a6;
-  transform: translate(20px,-5px);
+.f3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 .footer{
   background-color: #C6d5c5;
@@ -99,11 +79,6 @@ img{
   width: 1em;
   height: 1em;
 }
-.f1{
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-}
-
 @media (min-width: 900px){
   .cabecera{
     display: flex;
@@ -115,12 +90,14 @@ img{
     padding: 0 5%;
     text-shadow: 2px 2px #02010a;
   }
-  .img_secundarias{
-    display: flex;
-    justify-content: space-around;
+  .galeria{
+    align-items: center;
+    padding: 1%;
   }
-  .img_secundarias img{
-    width: 100%;
+  .galeria div{
+    display: inline-block;
+    width: 31%;
+    padding: 1%;
   }
   .footer{
     display: flex;
